@@ -1,0 +1,102 @@
+[
+  {
+    "id": "m78n45p32l",
+    "image": "https://example.com/college1.jpg",
+    "college_name": "ABC University",
+    "admission_date": "2023-09-01",
+    "admission_process": "Online application and entrance exam",
+    "event_details": "Annual cultural fest on October 15th, 2023",
+    "research_works": "Pioneering research in Artificial Intelligence and Robotics",
+    "sports_categories": ["Football", "Basketball", "Swimming"]
+  },
+  {
+    "id": "m78n45p3432l",
+    "image": "https://example.com/college2.jpg",
+    "college_name": "XYZ College of Engineering",
+    "admission_date": "2023-08-15",
+    "admission_process": "Merit-based admission",
+    "event_details": "TechExpo 2023 from September 10th to 12th",
+    "research_works": "Cutting-edge research in Renewable Energy",
+    "sports_categories": ["Cricket", "Badminton", "Athletics"]
+  },
+  {
+    "id": "m7wer45p32l",
+    "image": "https://example.com/college3.jpg",
+    "college_name": "LMN Medical College",
+    "admission_date": "2023-07-30",
+    "admission_process": "NEET entrance exam",
+    "event_details": "Medical Conference on September 5th, 2023",
+    "research_works": "Leading research in Cancer Treatment",
+    "sports_categories": ["Tennis", "Volleyball", "Chess"]
+  },
+  {
+    "id": "m78ns4df2l",
+    "image": "https://example.com/college4.jpg",
+    "college_name": "PQR Arts Institute",
+    "admission_date": "2023-09-10",
+    "admission_process": "Portfolio evaluation and interview",
+    "event_details": "Art Exhibition from October 1st to 7th, 2023",
+    "research_works": "Prominent research in Contemporary Art",
+    "sports_categories": ["Table Tennis", "Yoga"]
+  },
+  {
+    "id": "m723ff332l",
+    "image": "https://example.com/college5.jpg",
+    "college_name": "EFG Business School",
+    "admission_date": "2023-08-20",
+    "admission_process": "CAT/GMAT entrance exam",
+    "event_details": "Entrepreneurship Summit on September 25th, 2023",
+    "research_works": "Groundbreaking research in Business Analytics",
+    "sports_categories": ["Golf", "Squash"]
+  },
+  {
+    "id": "m7823465732l",
+    "image": "https://example.com/college6.jpg",
+    "college_name": "RST Law College",
+    "admission_date": "2023-07-15",
+    "admission_process": "CLAT entrance exam",
+    "event_details": "Legal Symposium on August 20th, 2023",
+    "research_works": "Notable research in Environmental Law",
+    "sports_categories": ["Lawn Tennis", "Fencing"]
+  },
+  {
+    "id": "m78n45yk678",
+    "image": "https://example.com/college7.jpg",
+    "college_name": "UVW Music Academy",
+    "admission_date": "2023-09-05",
+    "admission_process": "Audition and talent evaluation",
+    "event_details": "Annual Music Concert on October 30th, 2023",
+    "research_works": "Innovative research in Music Composition",
+    "sports_categories": ["Rock Climbing", "Hockey"]
+  },
+  {
+    "id": "m78n4345342l",
+    "image": "https://example.com/college8.jpg",
+    "college_name": "IJK Technical Institute",
+    "admission_date": "2023-08-25",
+    "admission_process": "JEE Main entrance exam",
+    "event_details": "Tech Symposium on September 15th, 2023",
+    "research_works": "Revolutionary research in Nanotechnology",
+    "sports_categories": ["Hockey", "Kabaddi"]
+  },
+  {
+    "id": "m78mm5p32l",
+    "image": "https://example.com/college9.jpg",
+    "college_name": "LMN School of Design",
+    "admission_date": "2023-09-15",
+    "admission_process": "Design Aptitude Test and interview",
+    "event_details": "Design Expo from October 10th to 12th, 2023",
+    "research_works": "Groundbreaking research in Sustainable Architecture",
+    "sports_categories": ["Cycling", "Rock Climbing"]
+  },
+  {
+    "id": "m78123123p32l",
+    "image": "https://example.com/college10.jpg",
+    "college_name": "OPQ Sports Academy",
+    "admission_date": "2023-07-25",
+    "admission_process": "Sports trials and fitness assessment",
+    "event_details": "National Sports Meet on August 30th, 2023",
+    "research_works": "Cutting-edge research in Sports Physiology",
+    "sports_categories": ["Athletics", "Football", "Basketball"]
+  }
+]
