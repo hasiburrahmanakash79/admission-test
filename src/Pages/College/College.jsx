@@ -17,7 +17,7 @@ const College = () => {
   console.log(colleges);
 
   return (
-    <div className="py-5"> 
+    <div className="p-5"> 
     <UseTitle title="All Colleges"></UseTitle>
     <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
         {colleges.slice(0, displayCount).map((college) => (
