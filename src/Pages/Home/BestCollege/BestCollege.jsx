@@ -28,7 +28,7 @@ const BestCollege = () => {
                 Admission Date: {college?.admission_date}
               </p>
               <div className="card-actions justify-end">
-                <Link to={`/collegeDetail/${college.id}`}><button className="btn btn-ghost btn-sm ">Details</button></Link>
+                <Link to={`/collegeDetail/${college._id}`}><button className="btn btn-ghost btn-sm ">Details</button></Link>
               </div>
             </div>
           </div>

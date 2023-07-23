@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-const CollegeList = ({college}) => {
-    const {college_name, admission_date, rating, image, id} = college
+const CollegeList = ({ college }) => {
+  const { college_name, admission_date, rating, image, id } = college;
   return (
     <tr>
       <td>
@@ -14,14 +14,18 @@ const CollegeList = ({college}) => {
         </div>
       </td>
       <td>
-        <Link to={id} className="text-lg font-bold">{college_name}</Link>
+        <Link to={id} className="text-lg font-bold">
+          {college_name}
+        </Link>
       </td>
       <td>
         <span className="badge badge-ghost badge-sm">{admission_date}</span>
       </td>
       <td>{rating}</td>
       <th>
-        <button className="btn btn-primary btn-sm">Apply Now</button>
+        <Link to={`/collegeDetail/${college._id}`}>
+          <button className="btn btn-primary btn-sm">Apply</button>
+        </Link>
       </th>
     </tr>
   );
