@@ -7,62 +7,62 @@ const PhotoGallery = () => {
       <div className="grid lg:grid-cols-6 md:grid-cols-4 gap-3">
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://35photo.pro/photos_main/1826/9134697.jpg" />
+            <img src="https://as2.ftcdn.net/v2/jpg/03/59/73/81/1000_F_359738146_jbEStqBQwJbp7gD2ahcRqhpXyVuTTXW3.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://www.canon.com.au/-/media/images/stories/best-community-images-2018/image-4-colorfulskies-1000.ashx?la=en" />
+            <img src="https://media.istockphoto.com/id/896458598/photo/multi-ethnic-teenage-graduates-throw-caps-in-air.jpg?s=612x612&w=0&k=20&c=maS7gX0-oDnUgpEPIPxhNg8vP-CNUevb1VwsYLxir7M=" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://i.ibb.co/ftQ1HHd/image.png" />
+            <img src="https://t4.ftcdn.net/jpg/03/30/81/93/360_F_330819391_g1lP11w9v0Wv0iVmOzepdSHLf5SYXyl3.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://www.mordeo.org/files/uploads/2018/11/Photographer-Camera-Self-Photography-4K-Ultra-HD-Mobile-Wallpaper-950x1689.jpg" />
+            <img src="https://img.freepik.com/free-photo/portrait-group-students-celebrating-their-graduation_23-2148201864.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg" />
+            <img src="https://www.csum.edu/industry/media/cohort-1-commencement-2013.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://cdn.pixabay.com/photo/2015/09/03/08/04/photographer-920128_1280.jpg" />
+            <img src="https://hips.hearstapps.com/hmg-prod/images/graduation-captions-lead-image-6412222f98500.jpg?crop=0.670xw:1.00xh;0.00801xw,0&resize=1200:*" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://cdn.pixabay.com/photo/2013/03/02/02/41/alley-89197_1280.jpg" />
+            <img src="https://media.istockphoto.com/id/1019066172/photo/confident-male-college-graduate.jpg?s=612x612&w=0&k=20&c=Gq5xzBQM1cFnrqjk3x8-QI_w_1Y1Dt9c7-mHhabHR70=" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg" />
+            <img src="https://commencement.northeastern.edu/wp-content/uploads/neu_4f18w0142.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://wallpapers.com/images/high/view-background-8d39qmnfvuzxa0lp.webp" />
+            <img src="https://www.rider.edu/sites/default/files/styles/hero_fg/public/2023-05/051422_Commencement_378_0.JPG?h=58c8a5e7&itok=-YikUAki" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://www.milwaukeemag.com/wp-content/uploads/2022/05/0522-414-CC-Swans-Li-e1652969275504-1024x722-1.jpeg" />
+            <img src="https://d3f5m0eiwn50nr.cloudfront.net/uploads/images/Graduate-on-stage-at-Beverley-Minster-mobile.jpg" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://c4.wallpaperflare.com/wallpaper/816/62/518/digital-art-nature-trees-mountains-wallpaper-thumb.jpg" />
+            <img src="https://mcb.illinois.edu/sites/default/files/styles/hero_image/public/paragraphs/hero/2022-03/Commencement%20for%20website.jpg?h=29fa2a61&itok=ROANUGfy" />
           </div>
         </div>
         <div className="avatar">
           <div className="w-full rounded">
-            <img src="https://images.pexels.com/photos/4651722/pexels-photo-4651722.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+            <img src="https://www.edgehill.ac.uk/wp-content/uploads/2022/06/Graduation.jpg" />
           </div>
         </div>
       </div>

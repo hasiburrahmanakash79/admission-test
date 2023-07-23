@@ -1,6 +1,23 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Authentication } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(Authentication);
+  const handleLogout = () => {
+    logOut()
+      .then(
+        Swal.fire({
+          icon: "success",
+          title: "Log Out Successful",
+          showConfirmButton: false,
+          timer: 1500,
+        })
+      )
+      .catch((error) => console.log(error));
+  };
+
   const NavItem = (
     <>
       <li>
@@ -52,7 +69,38 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{NavItem}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="btn btn-warning btn-sm">Login</Link>
+          {user ? (
+            <div className="dropdown dropdown-end ml-5">
+              <div
+                className="tooltip tooltip-left"
+                data-tip={user?.displayName}
+              >
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <img src={user.photoURL} />
+                  </div>
+                </label>
+              </div>
+
+              <ul
+                tabIndex={0}
+                className="mt-3 p-2 shadow bg-black text-white menu menu-compact dropdown-content rounded-box w-52"
+              >
+                <li>
+                  <Link className="justify-between w-full">
+                    {user?.displayName}
+                  </Link>
+                </li>
+                <li>
+                  <Link className="w-full" onClick={handleLogout}>
+                    Log Out
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link to="/login" className="btn btn-primary btn-sm">Login</Link>
+          )}
         </div>
       </div>
     </div>
