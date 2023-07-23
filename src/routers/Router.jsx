@@ -4,6 +4,8 @@ import Home from "../Pages/Home/Home/Home";
 import College from "../Pages/College/College";
 import Admission from "../Pages/Admission/Admission";
 import MyCollege from "../Pages/MyCollege/MyCollege";
+import Login from "../Authentication/Login/Login";
+import SignUp from "../Authentication/Login/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         }
     ]
   },
+  {
+    path: "/login",
+    element: <Login></Login>
+  },
+  {
+    path: "/signUp",
+    element: <SignUp></SignUp>
+  }
 ]);
 
 export default router;
