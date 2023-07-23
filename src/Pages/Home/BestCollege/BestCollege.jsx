@@ -1,6 +1,7 @@
 import UseTitle from "../../../Hook/UseTitle";
 import { useState } from "react";
 import useCollege from "../../../Hook/useCollege";
+import { Link } from "react-router-dom";
 
 const BestCollege = () => {
   const [colleges] = useCollege();
@@ -21,13 +22,13 @@ const BestCollege = () => {
             </div>
             <div className="card-body">
               <h2 className="card-title text-purple-700">{college?.college_name}</h2>
-              <p>Event: {college?.event_details}</p>
+              {/* <p>Event: {college?.event_details}</p> */}
               <p>Research: {college?.research_works}</p>
               <p className="text-orange-700">
                 Admission Date: {college?.admission_date}
               </p>
               <div className="card-actions justify-end">
-                <button className="btn btn-ghost btn-sm ">Details</button>
+                <Link to={`/collegeDetail/${college.id}`}><button className="btn btn-ghost btn-sm ">Details</button></Link>
               </div>
             </div>
           </div>

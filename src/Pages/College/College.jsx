@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useCollege from "../../Hook/useCollege";
-import CollegeDetails from "./CollegeDetails";
 import UseTitle from "../../Hook/UseTitle";
+import CollegeCart from "./CollegeCart";
 
 const College = () => {
 
@@ -21,7 +21,7 @@ const College = () => {
     <UseTitle title="All Colleges"></UseTitle>
     <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
         {colleges.slice(0, displayCount).map((college) => (
-          <CollegeDetails key={college.id} college={college}></CollegeDetails>
+          <CollegeCart key={college.id} college={college}></CollegeCart>
         ))}
       </div>
       <div className="text-center my-5">

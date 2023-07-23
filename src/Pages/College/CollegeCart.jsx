@@ -1,4 +1,4 @@
-const CollegeDetails = ({college}) => {
+const CollegeCart = ({college}) => {
     const {college_name, research_number, admission_date, rating, image} = college
   return (
     <div>
@@ -22,4 +22,4 @@ const CollegeDetails = ({college}) => {
   );
 };
 
-export default CollegeDetails;
+export default CollegeCart;
