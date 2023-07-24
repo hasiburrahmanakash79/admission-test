@@ -58,12 +58,12 @@ const CollegeDetails = () => {
               </div>
             </div>
 
-            <Link
-              to="apply"
+            {/* <Link
+              to="/apply"
               className="btn btn-warning btn-outline btn-sm my-2"
             >
               Apply Now
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

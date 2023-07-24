@@ -3,9 +3,13 @@ import UseTitle from "../../Hook/UseTitle";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 import { Authentication } from "../../Provider/AuthProvider";
+import { useLoaderData } from "react-router-dom";
 
 const Apply = () => {
   const { user } = useContext(Authentication);
+
+  const singleCollage = useLoaderData();
+  const { college_name, admission_date, rating, image } = singleCollage;
 
   const Image_Hosting_Token = import.meta.env.VITE_image_hosting_apiKey;
 
@@ -32,30 +36,33 @@ const Apply = () => {
             number,
             email,
             date,
-            image: imgURL,
+            user_image: imgURL,
             address,
+            college_name,
+            admission_date,
+            rating,
+            image,
             status: "Confirm",
           };
           console.log(data);
           fetch("http://localhost:5000/apply", {
             method: "POST",
             headers: {
-              "content-type": "application/json"
+              "content-type": "application/json",
             },
-            body: JSON.stringify(apply)
+            body: JSON.stringify(apply),
           })
-          .then(res => res.json())
-          .then(data => {
-            console.log(data);
-            // if(data.data.insertedId){
+            .then((res) => res.json())
+            .then((data) => {
+              console.log(data);
+              // if(data.data.insertedId){
               Swal.fire({
                 showConfirmButton: false,
                 timer: 1500,
                 title: "Item added Successful",
                 icon: "success",
               });
-            
-          })
+            });
         }
       });
   };
@@ -114,10 +121,8 @@ const Apply = () => {
               className="select w-full"
               {...register("subject", { required: true })}
             >
-              <option disabled >
-                Subject select
-              </option>
-              <option >Science</option>
+              <option disabled>Subject select</option>
+              <option>Science</option>
               <option>Mathematics</option>
               <option>Chemistry</option>
               <option>Physics</option>
