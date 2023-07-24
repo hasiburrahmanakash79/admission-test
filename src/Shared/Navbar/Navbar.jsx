@@ -29,9 +29,12 @@ const Navbar = () => {
       <li>
         <Link to="/admission">Admission</Link>
       </li>
-      <li>
+      {
+        user ? <li>
         <Link to="/myCollege">My College</Link>
-      </li>
+      </li> : <></>
+      }
+      
     </>
   );
 

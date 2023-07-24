@@ -9,6 +9,7 @@ import SignUp from "../Authentication/Login/SignUp";
 import CollegeDetails from "../Pages/CollegeDetails/CollegeDetails";
 import Apply from "../Pages/Apply/Apply";
 import PageNotFound from "../Pages/PageNotFound/PageNotFound";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/apply/:id",
-            element: <Apply></Apply>,
+            element: <PrivateRoute><Apply></Apply></PrivateRoute>,
             loader: ({params}) => fetch(`https://admission-test-server.vercel.app/collegeDetail/${params.id}`)
         },
     ]
