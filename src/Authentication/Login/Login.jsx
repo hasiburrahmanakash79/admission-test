@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { Authentication } from "../../Provider/AuthProvider";
+import SocialLogin from "../../Hook/SocialLogin/SocialLogin";
 
 
 const Login = () => {
@@ -101,7 +102,7 @@ const Login = () => {
             <div className="divider"></div>
             <p className="font-semibold">Or Sign In with</p>
             <div className="flex items-center justify-center gap-4 my-2">
-              {/* <SocialLogin></SocialLogin> */}
+              <SocialLogin></SocialLogin>
             </div>
             <Link to="/signUp">
               Do not have an account?{" "}

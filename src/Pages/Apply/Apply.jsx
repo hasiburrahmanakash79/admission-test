@@ -45,7 +45,7 @@ const Apply = () => {
             status: "Confirm",
           };
           console.log(data);
-          fetch("http://localhost:5000/apply", {
+          fetch("https://admission-test-server.vercel.app/apply", {
             method: "POST",
             headers: {
               "content-type": "application/json",

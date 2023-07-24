@@ -7,7 +7,7 @@ const MyCollege = () => {
 
   const { user } = useContext(Authentication);
 
-  const url = `http://localhost:5000/apply?email=${user?.email}`;
+  const url = `https://admission-test-server.vercel.app/apply?email=${user?.email}`;
 
   useEffect(() => {
     fetch(url)

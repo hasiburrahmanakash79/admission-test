@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { Authentication } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../../Hook/SocialLogin/SocialLogin";
 
 const SignUp = () => {
   const [passShow, setPassShow] = useState(false);
@@ -35,7 +36,7 @@ const SignUp = () => {
             address: data.address,
             contact: data.number
           };
-          fetch("http://localhost:5000/users", {
+          fetch("https://admission-test-server.vercel.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -190,6 +191,7 @@ const SignUp = () => {
           <div className="px-5 text-center">
             <div className="divider mt-0 "></div>
             <p className="font-semibold">Or Sign In with</p>
+            <SocialLogin></SocialLogin>
             <div className="flex items-center justify-center gap-4 my-2">
             </div>
           </div>

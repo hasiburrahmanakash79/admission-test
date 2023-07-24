@@ -8,6 +8,7 @@ import Login from "../Authentication/Login/Login";
 import SignUp from "../Authentication/Login/SignUp";
 import CollegeDetails from "../Pages/CollegeDetails/CollegeDetails";
 import Apply from "../Pages/Apply/Apply";
+import PageNotFound from "../Pages/PageNotFound/PageNotFound";
 
 const router = createBrowserRouter([
   {
@@ -33,12 +34,12 @@ const router = createBrowserRouter([
         {
             path: "/collegeDetail/:id",
             element: <CollegeDetails></CollegeDetails>,
-            loader: ({params}) => fetch(`http://localhost:5000/collegeDetail/${params.id}`)
+            loader: ({params}) => fetch(`https://admission-test-server.vercel.app/collegeDetail/${params.id}`)
         },
         {
             path: "/apply/:id",
             element: <Apply></Apply>,
-            loader: ({params}) => fetch(`http://localhost:5000/collegeDetail/${params.id}`)
+            loader: ({params}) => fetch(`https://admission-test-server.vercel.app/collegeDetail/${params.id}`)
         },
     ]
   },
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
   {
     path: "/signUp",
     element: <SignUp></SignUp>
+  },
+  {
+    path: "*",
+    element: <PageNotFound></PageNotFound>
   }
 ]);
 
